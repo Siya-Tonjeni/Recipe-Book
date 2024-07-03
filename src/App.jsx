@@ -7,7 +7,7 @@ const recipes = [
   // Add recipe objects here (image, title, description, ingredients, instructions)
   {
     id: 1,
-    image: "./public/img/fudge.jpg",
+    image: "../Assets/fudge.jpg",
     title: "Fudge",
     description: "Delicious fudge in a favourite flavour",
     ingredient: [
@@ -27,7 +27,7 @@ const recipes = [
   },
   {
     id: 2,
-    image: "./public/img/churros.jpg",
+    image: "../Assets/churros.jpg",
     title: "Churros",
     description: "Crispy outside and airy inside super easy recipe and such a fun party dessert!",
     ingredient: [
@@ -51,7 +51,7 @@ const recipes = [
   },
   {
     id: 3,
-    image: "./public/img/cucumber-salad.jpg",
+    image: "../Assets/cucumber-salad.jpg",
     title: "Spicy Cucumber Salad",
     description: "Korean inspired cucumber salad is refreshing, tangy and zesty",
     ingredient: [
@@ -75,7 +75,7 @@ const recipes = [
   },
   {
     id: 4,
-    image: "./public/img/salmon.jpg",
+    image: "../Assets/salmon.jpg",
     title: "Firecracker Salmon",
     description: "Succulent, flakey and fork tender with crispy edges.",
     ingredient: [
@@ -105,7 +105,7 @@ const recipes = [
   },
   {
     id: 5,
-    image: "./public/img/kale-salad.jpg",
+    image: "../Assets/kale-salad.jpg",
     title: "Kale Caeser Salad",
     description: "Filling delicious kale",
     ingredient: [
@@ -136,7 +136,7 @@ const recipes = [
   },
   {
     id: 6,
-    image: "./public/img/lemon-loaf.jpg",
+    image: "../Assets/lemon-loaf.jpg",
     title: "Lemon Loaf Cake",
     description: "Tender buttery crumb and full of bright citrus flavor cake",
     ingredient: [
