@@ -13,12 +13,13 @@ const NavBar = () => {
     <Nav.Link href="/">Home</Nav.Link>
     <Nav.Link href="/recipes">Recipes</Nav.Link>
     <Nav.Link href="/about">About</Nav.Link>
+    <Nav.Link href="/about">firstpage</Nav.Link>
   </Nav>
   </Navbar.Collapse>
 </Container>
 </Navbar>
-    )
-}
+    );
+};
 
 export default NavBar;
 
