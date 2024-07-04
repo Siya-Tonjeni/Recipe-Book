@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/Home';
+import Home from './components/Home';
 import RecipesList from './components/RecipesList';
 import RecipeDetail from './components/RecipeDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
