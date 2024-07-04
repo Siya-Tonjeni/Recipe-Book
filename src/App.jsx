@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/Homepage.jsx';
+import Homepage from './components/Homepage.jsx';
 import RecipesList from './components/RecipesList.jsx';
 import RecipeDetail from './components/RecipeDetail.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -169,12 +169,12 @@ const recipes = [
 ];
 
 function App() {
-  const [recipeList, setRecipeList] = useState(recipes);
+  const [recipeList ] = useState(recipes);
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Homepage.jsx/>} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/recipes" element={<RecipesList recipes={recipeList} />} />
         <Route path="/recipe/:id" element={<RecipeDetail recipes={recipeList} />} />
       </Routes>
