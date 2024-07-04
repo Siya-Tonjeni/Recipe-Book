@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './components/Home';
 import RecipesList from './components/RecipesList';
 import RecipeDetail from './components/RecipeDetail';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const recipes = [
   // Add recipe objects here (image, title, description, ingredients, instructions)
   {
     id: 1,
-    image: "../Assets/fudge.jpg",
+    image: "https://i.pinimg.com/564x/02/1f/b9/021fb939bb6b4963898e076d06c3e2ba.jpg",
     title: "Fudge",
     description: "Delicious fudge in a favourite flavour",
     ingredient: [
@@ -27,7 +29,7 @@ const recipes = [
   },
   {
     id: 2,
-    image: "../Assets/churros.jpg",
+    image: "https://i.pinimg.com/564x/72/fa/ef/72faef6a36a0e51700f072f5eb345ae8.jpg",
     title: "Churros",
     description: "Crispy outside and airy inside super easy recipe and such a fun party dessert!",
     ingredient: [
@@ -51,7 +53,7 @@ const recipes = [
   },
   {
     id: 3,
-    image: "../Assets/cucumber-salad.jpg",
+    image: "https://i.pinimg.com/564x/43/80/8d/43808df5b244c718cab9f9c034355d14.jpg",
     title: "Spicy Cucumber Salad",
     description: "Korean inspired cucumber salad is refreshing, tangy and zesty",
     ingredient: [
@@ -75,7 +77,7 @@ const recipes = [
   },
   {
     id: 4,
-    image: "../Assets/salmon.jpg",
+    image: "https://i.pinimg.com/564x/bf/8a/30/bf8a30530a79be32081cbf21235209bd.jpg",
     title: "Firecracker Salmon",
     description: "Succulent, flakey and fork tender with crispy edges.",
     ingredient: [
@@ -105,7 +107,7 @@ const recipes = [
   },
   {
     id: 5,
-    image: "../Assets/kale-salad.jpg",
+    image: "https://i.pinimg.com/564x/3c/48/85/3c48855fbc58a159cc7d68714f8c0fe5.jpg",
     title: "Kale Caeser Salad",
     description: "Filling delicious kale",
     ingredient: [
@@ -136,7 +138,7 @@ const recipes = [
   },
   {
     id: 6,
-    image: "../Assets/lemon-loaf.jpg",
+    image: "https://i.pinimg.com/564x/87/c4/6a/87c46a93ea322104ce00e23ac3cab388.jpg",
     title: "Lemon Loaf Cake",
     description: "Tender buttery crumb and full of bright citrus flavor cake",
     ingredient: [
@@ -172,11 +174,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<RecipesList recipes={recipeList} />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/recipes" element={<RecipesList recipes={recipeList} />} />
         <Route path="/recipe/:id" element={<RecipeDetail recipes={recipeList} />} />
       </Routes>
     </Router>
-   
   );
 }
 
