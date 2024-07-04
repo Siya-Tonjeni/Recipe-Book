@@ -174,7 +174,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Home />} />
         <Route path="/recipes" element={<RecipesList recipes={recipeList} />} />
         <Route path="/recipe/:id" element={<RecipeDetail recipes={recipeList} />} />
       </Routes>
