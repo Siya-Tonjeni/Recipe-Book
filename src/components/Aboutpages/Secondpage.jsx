@@ -55,8 +55,7 @@ function SecondPage() {
     <div className='text-xs md:text-sm pt-[15rem] pl-[12rem] w-[29rem]'>Fresh from the gardens to your plate! Our salads are a celebration of color, texture, and flavour, crafted to nourish your body and delight your taste buds.</div>
     <div className='text-s md:text-md pt-[15rem] pl-[2rem] w-[17rem]'>Weelcome and discover the art of healthy eating with our vibrant salads.</div>
     <div className='text-xs md:text-sm pt-[1rem] pl-[12rem] w-[17rem]'>Our salads are a symmphony of fresh ingredients, carefully combined to tantalize your buds and leave you feeling refreshed and revitalized.</div>
-
-      </div>
+    </div>
   );
 };
 

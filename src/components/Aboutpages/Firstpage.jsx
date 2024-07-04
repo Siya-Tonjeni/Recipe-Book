@@ -55,7 +55,7 @@ function FirstPage()  {
     <img src={landingimage} alt="Landing Page" className='w-52 h-50 object-cover rounded-tl-[22rem] rounded-bl-[22rem]' />
   </div>
 </div>
-
+<Link to="/secondpage"><button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Next page</button></Link>
 
 </div>     
   );
